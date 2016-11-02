@@ -3,7 +3,6 @@ Meet up with potential business partners, employers or employees using a combina
 
 How it works.  
 1. Log in with linkedin
-2. Confirm location
-3. Click on principle interest
-4. Gets data with similar topic, location and populates upcoming meet ups
-click to join a meet up anonymously or not.  
+2. Gets data with similar topic, location and populates upcoming meet ups
+click to join a meet up.  
+3. 
