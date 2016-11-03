@@ -1,4 +1,4 @@
-body {
+body, h1{
   display: block;
   margin: 8px;
   background-color: black;
@@ -8,7 +8,7 @@ nav, .tab, a {
     background-color: transparent;
     top: 2.5em;
     display: inline-block;
-    font-size: 1.5em; color: blue;
+    font-size: 1em; color: yellow;
 }
 
 p {
@@ -20,6 +20,6 @@ p {
 }
 .button{
   display: block;
-  background-color: blue;
-  font-size: 200%; color: silver;
+  background-color: gold;
+  font-size: 200%; color: black;
 }
