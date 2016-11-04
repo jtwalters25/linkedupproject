@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
+  <script id="results-template" type="text/x-handlebars-template">
+  <li>
+    <a href="{{html_url}}" target="_blank"><h3>{{ name }}</h3></a>
+    <p>Industry: {{ industry }}</p>
+    <p>Date: {{ date }}</p>
+    <p>Location: {{ location }}</p>
+  </li>
+</script>
 </head>
 <body>
   <div id="header-wrapper">
@@ -24,9 +32,32 @@
   </header>
 </div>
 <main>
-  <div>
-  <button style="display:block; "type="button" name="signIn">Sign In To Link Up!</button>
-</div>
+  <section class="home">
+    <div class="summary">
+      <h4 style="text-align: left;"> Meet up with potential business partners, employers or employees using a combination of linkedIn and Meet Up API's.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions. <br>
+
+      How it works.<br>
+      1. Log in with LinkedIn<br>
+      2. Gets data with similar topic, location and populates upcoming meet ups
+      click to join a meet up.<br>
+      3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br>
+</h4>
+    </div>
+  <button class="button" style="display:block;" type="button" name="signIn">Sign In To Link Up!</button>
+</section>
+<section class="results">
+  Upcoming Meet Ups...
+
+
+</section>
+<section class="about-us">
+  <ul>
+    <li class="about">Britney <img src="" style="width:30%;height:30%;" alt="" /><br>Born In The manger around sheep with wolves teeth.<br><p>Passion tech student who loves coffee and candy<br>bvfdbvbfhdlvbfdb<p></li>
+    <li class="about">Trent <img src="" style="width:30%;height:30%;" alt="" /><br>Born in a lions den.<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+    <li class="about">Jeremiah <img src="" style="width:30%;height:30%; "alt="" /><br>Unborn<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+  </ul>
+</section>
+
 </main>
 <footer>
 
