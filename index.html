@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LinkUp.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <script id="results-template" type="text/x-handlebars-template">
+  <li>
+    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+    <p>Industry: {{industry}}</p>
+    <p>Date: {{date}}</p>
+    <p>Location: {{location}}</p>
+
+  </li>
+</script>
+</head>
+<body>
+  <div id="header-wrapper">
+    <header>
+    <h1>LinkUp.com</h1>
+    <nav class="main-nav">
+      <div class="icon-menu"></div>
+      <ul>
+        <li class="icon-home" data-tab="home" id="homepage-tab"><a href="/">Homepage</a></li>
+        <li class="icon-link" data-tab="results" id="results-tab"><a href="/results">Results</a></li>
+        <li class="icon-happy" data-tab="about" id="about-tab"><a href="/about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<main>
+  <div class="tab-content" id="home">
+      <p>Meet up with potential business partners, employers or employees using a combination of linkedIn and Meet Up API's.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.<br>
+
+      How it works.<br>
+      1. Log in with LinkedIn<br>
+      2. Gets data with similar topic, location and populates upcoming meet ups
+      click to join a meet up.<br>
+      3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br>
+</p>
+    </div>
+  <button class="button" style="display:block;" type="button" name="signIn">Sign In To Link Up!</button>
+</section>
+<div class="tab-content" id="results">
+  <h3>Upcoming Meet Ups...</h3>
+<ul class="list-group">
+  <li class="list-group-item"></li>
+</ul>
+</section>
+<div class="tab-content" id="about-us" >
+  <ul>
+    <li class="about">Britney <img src="/styles/imgs/britney.jpeg" style="width:30%;height:30%;" alt="" /><br><p>Passionate tech student who loves coffee and candy<br>bvfdbvbfhdlvbfdb<p></li>
+    <li class="about">Trent <img src="/styles/imgs/trent.jpeg" style="width:30%;height:30%;" alt="" /><br>Passionate Gamer<br><p>Passionate Gamer<br>bvfdbvbfhdlvbfdb<p></li>
+    <li class="about">Jeremiah <img src="/styles/imgs/hawks.jpg" style="width:30%;height:30%; "alt="" /><br>Unborn<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+  </ul>
+</section>
+
+</main>
+<footer>
+
+</footer>
+<script >
+
+</script>
+<script src="scripts/homeView.js"></script>
+<!-- <script src="scripts/routes.js"> -->
+
+</script>
+</body>
+</html>
