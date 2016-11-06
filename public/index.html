@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
+  <script type="text/javascript" src="//platform.linkedin.com/in.js">
+  api_key:78jbwdgk7fup6m
+  authorize:true
+  </script>
   <script id="results-template" type="text/x-handlebars-template">
   <li>
     <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
     <p>Industry: {{industry}}</p>
     <p>Date: {{date}}</p>
     <p>Location: {{location}}</p>
-
   </li>
 </script>
 </head>
@@ -44,7 +47,7 @@
       3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br>
 </p>
     </div>
-  <button class="button" style="display:block;" type="button" name="signIn">Sign In To Link Up!</button>
+  <button id="loginbutton" style="display:block;" type="button" name="button">Login</button>
 </section>
 <div class="tab-content" id="results">
   <h3>Upcoming Meet Ups...</h3>
@@ -62,14 +65,18 @@
 
 </main>
 <footer>
-
+301n5 Final Project 2016
 </footer>
 <script >
 
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="/vendor/scripts/handlebars.js"></script>
+<script src="/vendor/scripts/marked.js"></script>
+<script src="/vendor/scripts/html5sql.js"></script>
+<script src="/vendor/scripts/page.js"></script>
+<script src="apicalls.js" charset="utf-8"></script>
 <script src="scripts/homeView.js"></script>
-<!-- <script src="scripts/routes.js"> -->
-
-</script>
+<script src="scripts/routes.js"></script>
 </body>
 </html>

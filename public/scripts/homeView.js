@@ -2,9 +2,9 @@
 
 (function(module) {
 
-var homeView = {};
+  var homeView = {};
 
-homeView.showingTabs = function(){
+  homeView.showingTabs = function(){
     $('.tab').hide();
     $('#homepage-tab').show();
   };
@@ -20,8 +20,8 @@ homeView.showingTabs = function(){
     });
   };
 
-homeView.toogleNavDisplay();
-homeView.showingTabs();
+  homeView.toggleNavDisplay();
+  homeView.showingTabs();
 
   module.homeView = homeView;
 })(window);
