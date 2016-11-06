@@ -3,19 +3,24 @@ body, h1{
   margin: 8px;
   background-color: black;
   font-size: 150%; color: white;
-  font-family: sans-serif;;
+  font-family: sans-serif;
+
 }
 nav, .tab, a {
     background-color: transparent;
     top: 2.5em;
     display: inline-block;
     font-family: serif;;
-    font-size: 1em; color: yellow;
+    font-size: 1em; color: gold;
 }
 
 h2, h3 {
   font-family: sans-serif;
-  font-style:underline;
+  text-decoration: underline;
+}
+
+ul li{
+  list-style: none;
 }
 
 p {
