@@ -1,20 +1,32 @@
-body {
+body, h1{
   display: block;
   margin: 8px;
-  background-color: gray;
-  font-size: 200%; color: white;
+  background-color: black;
+  font-size: 150%; color: white;
+  font-family: sans-serif;
 }
-nav, .tab {
-    background-color: grey;
+nav, .tab, a {
+    background-color: transparent;
     top: 2.5em;
     display: inline-block;
-    font-size: 1.5em;
+    font-family: serif;;
+    font-size: 1em; color: yellow;
+}
+
+h2, h3 {
+  font-family: sans-serif;
+  font-style:underline;
 }
 
 p {
-  text-align: center;
+  text-align: left;
   font-weight: normal; color: white;
-  font-family: sans-serif;
-  font-size: 120%;
+  font-family: ;
+  font-size: 100%;
   margin: auto; padding: auto;
+}
+.button{
+  display: block;
+  background-color: gold;
+  font-size: 200%; color: black;
 }
