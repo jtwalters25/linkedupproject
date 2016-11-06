@@ -1,32 +1,73 @@
 body, h1{
   display: block;
   margin: 8px;
-  background-color: black;
+  background-color: gray;
   font-size: 150%; color: white;
   font-family: sans-serif;
+  /*border: dotted 5px pink;*/
+}
+main {
+  width: 960px;
+  margin: 30px auto;
 }
 nav, .tab, a {
     background-color: transparent;
     top: 2.5em;
     display: inline-block;
-    font-family: serif;;
+    font-family: serif;
     font-size: 1em; color: yellow;
 }
 
-h2, h3 {
-  font-family: sans-serif;
-  font-style:underline;
-}
-
-p {
-  text-align: left;
-  font-weight: normal; color: white;
-  font-family: ;
-  font-size: 100%;
-  margin: auto; padding: auto;
-}
-.button{
+.button {
   display: block;
   background-color: gold;
   font-size: 200%; color: black;
+  }
+
+ /*About Page Specific CSS */
+.about-us section {
+  height: 100px;
+  clear: both;
+  font-family: 'Handlee', cursive;
 }
+section img {
+  float: left;
+  margin: 0;
+  box-shadow: 10px 10px 15px blue;
+  margin-right: 10em;
+  padding: 5px;
+  /*border:dotted 5px orange;*/
+}
+.about-us p {
+  /*position: absolute;*/
+  color: #000;
+  width: 50em;
+  float: right;
+  margin-left: 0;
+  text-align: center;
+  font-family: 'Handlee', cursive;
+  line-height: 2em;
+  font-size: 20px;
+  /*border: dotted 5px red;*/
+}
+
+/*footer{
+  position: relative;
+
+  height:50px;
+  text-align:center;
+  background-color:#000;
+  color:#fff;
+  border: dotted 5px green;*/
+
+}
+/*footer h3{
+  padding-top:10px;
+  font-family: 'Rancho', cursive;
+}
+footer p{
+  font-style:italic;
+  font-family: 'Rancho', cursive;
+  size:12px;
+  word-spacing: .3em;
+}*/
