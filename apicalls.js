@@ -1,9 +1,5 @@
 (function(module) {
   /*
-  * https://api.meetup.com/topics?key=MEETUP_KEY&search=farming&order=members
-  * https://api.meetup.com/find/groups?zip=11211&radius=1&category=34&order=members&key=MEETUP_KEY
-  */
-  /*
   <script type="text/javascript" src="//platform.linkedin.com/in.js">
   api_key:78jbwdgk7fup6m
   authorize:true

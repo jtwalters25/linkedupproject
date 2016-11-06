@@ -2,16 +2,19 @@ const requestProxy = require('express-request-proxy');
 const express = require('express');
 const port = process.env.PORT || 3000;
 const app = express();
+const config = require('./config');
 
 app.get('/meetup/*', requestProxy({
-  url: 'https://api.meetup.com/*&key=' + config.MEETUP_KEY,
+  url: 'https://api.meetup.com/*',
+  query: {
+    key: config.MEETUP_KEY
+  }
 }));
 
-app.use(express.static('./'));
+app.use(express.static('./public/'));
 
-app.get('*', function(request, response) {
-  console.log('New request:', request.url);
-  response.sendFile('index.html', { root: '.' });
+app.get('*', function(req, res) {
+  console.log('Request for URL:', req.url);
 });
 
 app.listen(port, function() {
