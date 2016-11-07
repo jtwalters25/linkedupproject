@@ -1,9 +1,9 @@
 body, h1{
   display: block;
   margin: 8px;
-  background-color: black;
+  background-color: navy;
   font-size: 150%; color: white;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
 
 }
 nav, .tab, a {
@@ -30,6 +30,7 @@ p {
   font-size: 100%;
   margin: auto; padding: auto;
 }
+
 .button{
   display: block;
   background-color: gold;
