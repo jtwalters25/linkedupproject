@@ -17,6 +17,7 @@
       IN.API.Profile('me').fields('id,firstName,lastName,industry').result(function(profile) {
         $.getJSON('/meetup/topics?search=' + profile.values[0].industry + '&order=members', function(data) {
           renderResults(data.results);
+          refreshButtonText();
         });
       });
     });
@@ -34,13 +35,17 @@
     });
   }
 
+  function refreshButtonText() {
+    if (IN.User.isAuthorized()) {
+      $('#loginbutton').text('Log Out');
+    } else {
+      $('#loginbutton').text('Log In');
+    }
+  }
 
   linkedUp.initialize = function() {
     $('#loginbutton').on('click', handleLoginButton);
-
-    if (IN.User.isAuthorized()) {
-      $('#loginbutton').text('Log Out');
-    }
+    refreshButtonText();
   };
 
   module.linkedUp = linkedUp;
