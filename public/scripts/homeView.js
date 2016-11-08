@@ -2,11 +2,11 @@
 
 (function(module) {
 
-var homeView = {};
+  var homeView = {};
 
-homeView.showingTabs = function(){
-    $('.tab').hide();
-    $('#homepage-tab').show();
+  homeView.showingTabs = function(e){
+    $('.tab-content').hide();
+    $('#home').show();
   };
   $('.main-nav ul a').on('click', function(){
     var $showstuff = $(this).data('tab');
@@ -20,8 +20,8 @@ homeView.showingTabs = function(){
     });
   };
 
-homeView.toogleNavDisplay();
-homeView.showingTabs();
+  homeView.toggleNavDisplay();
+  homeView.showingTabs();
 
   module.homeView = homeView;
 })(window);

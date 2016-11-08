@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LinkUp.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script type="text/javascript" src="//platform.linkedin.com/in.js">
+    api_key:78jbwdgk7fup6m
+    authorize:true
+    onLoad: linkedUp.initialize
+  </script>
+  <script id="results-template" type="text/x-handlebars-template">
+    <li>
+      <a href="{{link}}" target="_blank"><h3>{{name}}</h3></a>
+      <p>Members: {{members}}</p>
+      <p>Last Updated: {{updated}}</p>
+    </li>
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container"
+    <h1>LinkUp.com</h1>
+    <nav class="main-nav">
+      <div class="icon-menu"></div>
+      <ul>
+        <li><a href="#" class="icon-home" data-tab="home">Homepage</a></li>
+        <li><a href="#" class="icon-link" data-tab="results">Results</a></li>
+        <li><a href="#" class="icon-happy" data-tab="about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<main>
+  <div class="tab-content" id="home">
+    <article>
+      <p>Meet up with potential business partners, employers or employees using a combination of linkedIn and Meet Up API's.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.<br>
+
+        How it works.<br>
+        1. Log in with LinkedIn<br>
+        2. Gets data with similar topic, location and populates upcoming meet ups
+        click to join a meet up.<br>
+        3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br>
+      </p>
+    </article>
+    <button id="loginbutton" style="display:block;" type="button" name="button">Login</button>
+  </div>
+  <div class="tab-content" id="results">
+    <h3>Upcoming Meet Ups...</h3>
+    <div id="meetup-results">
+    </div>
+  </div>
+  <div class="tab-content" id="about" >
+    <ul>
+      <li class="about">Britney <img src="/styles/imgs/britney.jpeg" style="width:30%;height:30%;" alt="" /><br><p>Passionate tech student who loves coffee and candy<br>bvfdbvbfhdlvbfdb<p></li>
+        <li class="about">Trent <img src="/styles/imgs/trent.jpeg" style="width:30%;height:30%;" alt="" /><br>Passionate Gamer<br><p>Passionate Gamer<br>bvfdbvbfhdlvbfdb<p></li>
+          <li class="about">Jeremiah <img src="/styles/imgs/hawks.jpg" style="width:30%;height:30%; "alt="" /><br>Unborn<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+          </ul>
+        </div>
+
+  </main>
+      <footer style="border-color: white;">
+        301n5 Final Project 2016
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/vendor/scripts/handlebars.js"></script>
+    <script src="/vendor/scripts/marked.js"></script>
+    <script src="scripts/results.js" charset="utf-8"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+    <script src="scripts/homeView.js"></script>
+
+  </body>
+  </html>
