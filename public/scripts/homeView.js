@@ -1,6 +1,6 @@
 'use strict';
 
-// (function(module) {
+(function(module) {
 
   var homeView = {};
 
@@ -20,8 +20,8 @@
     });
   };
 
-//   homeView.toggleNavDisplay();
-//   homeView.showingTabs();
-//
-//   module.homeView = homeView;
-// })(window);
+  homeView.toggleNavDisplay();
+  homeView.showingTabs();
+
+  module.homeView = homeView;
+})(window);
