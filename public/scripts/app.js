@@ -1,6 +1,8 @@
 (function(module) {
 
-  var template = Handlebars.compile($('#results-template').text());
+  let linkedUp = { };
+
+  let template = Handlebars.compile($('#results-template').text());
 
   function handleLoginButton() {
     if (IN.User.isAuthorized()) {
@@ -32,14 +34,14 @@
     });
   }
 
-$(function(){
-  $('#loginbutton').on('click', handleLoginButton);
 
-  if (IN.User.isAuthorized()) {
-    $('#loginbutton').text('Log Out');
-  }
-});
+  linkedUp.initialize = function() {
+    $('#loginbutton').on('click', handleLoginButton);
 
+    if (IN.User.isAuthorized()) {
+      $('#loginbutton').text('Log Out');
+    }
+  };
 
-
+  module.linkedUp = linkedUp;
 })(window);
