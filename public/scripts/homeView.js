@@ -20,15 +20,6 @@
     });
   };
 
-
-  homeView.showResults = function() {
-      $('#loginbutton').on('click', function() {
-        $('.tab-content').hide();
-        $('#results').show();
-      });
-    };
-
-  homeView.showResults();
   homeView.toggleNavDisplay();
   homeView.showingTabs();
 

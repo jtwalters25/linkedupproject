@@ -17,9 +17,10 @@
   </script>
   <script id="results-template" type="text/x-handlebars-template">
     <li>
-      <a href="{{link}}" target="_blank"><h3>{{name}}</h3></a>
-      <p>Members: {{members}}</p>
-      <p>Last Updated: {{updated}}</p>
+      <a href="{{event_url}}" target="_blank"><h3>{{name}}</h3></a>
+      <p>Location: {{venue.city}}, {{venue.address_1}}</p>
+      <p>Time: {{time}}</p>
+      <p>Number attending so far: {{yes_rsvp_count}}</p>
     </li>
   </script>
 </head>
