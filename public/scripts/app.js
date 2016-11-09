@@ -36,6 +36,7 @@
 
   function renderResults(data) {
     for (let i = 0;i < 10;i++) {
+      data[i].time = new Date(data[i].time).toString();
       $('#meetup-results').append(template(data[i]));
     }
     $('.tab-content').hide();
