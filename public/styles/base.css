@@ -4,32 +4,36 @@ body, h1{
   background-color: navy;
   font-size: 150%; color: white;
   font-family: 'Oswald', sans-serif;
-  div.container {
-    width: 100%;
-    border: 1px solid gray;
+  width: 100%;
+  border: 1px solid gray;
   }
+
+div.container{
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: inherit;
+}
 
   header, footer {
     padding: 1em;
     color: white;
     background-color: black;
-    clear: left;
     text-align: center;
   }
 
-  nav, .main-nav, .tab, a {
-    background-color: transparent;
+  .main-nav ul a, .tab, {
+    text-align: center;
     top: 2.5em;
-    float: left;
-    max-width: 160px;
+    max-width: 150px;
     margin: auto;
     padding: 1em;
     display: inline-block;
-    font-family: serif;;
+    font-family: serif;
     font-size: 1em; color: gold;
   }
   article {
-    margin-left: 170px;
+    margin-left: 100px;
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
@@ -45,7 +49,7 @@ body, h1{
   }
 
   p {
-    text-align: left;
+    /*text-align: left;*/
     font-weight: normal; color: white;
     font-family: ;
     font-size: 100%;
