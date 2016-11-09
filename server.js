@@ -11,6 +11,10 @@ app.get('/meetup/*', requestProxy({
   }
 }));
 
+app.get('/ip', function(req, res) {
+  res.json({ ip: req.connection.remoteAddress.replace('::ffff:', '') });
+});
+
 app.use(express.static('./public/'));
 
 app.get('*', function(req, res) {
