@@ -12,6 +12,14 @@
     }
   }
 
+  function getZipCode(callback) {
+    $.getJSON('http://jsonip.com/', function(ipData) {
+      $.getJSON('http://freegeoip.net/json/' + ipData.ip, function(zipData) {
+        callback(zipData.zip_code);
+      });
+    });
+  }
+
   function authorizeUser() {
     IN.User.authorize(function() {
       IN.API.Profile('me').fields('id,firstName,lastName,industry').result(function(profile) {
