@@ -9,23 +9,23 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <script type="text/javascript" src="//platform.linkedin.com/in.js">
-    api_key:78jbwdgk7fup6m
-    authorize:true
-    onLoad: linkedUp.initialize
+  api_key:78jbwdgk7fup6m
+  authorize:true
+  onLoad: linkedUp.initialize
   </script>
   <script id="results-template" type="text/x-handlebars-template">
-    <li>
+    <table>
       <a href="{{link}}" target="_blank"><h3>{{name}}</h3></a>
-      <p>Members: {{members}}</p>
-      <p>Last Updated: {{updated}}</p>
-    </li>
+      <tr>Members: {{members}}</tr>
+      <tr>Last Updated: {{updated}}</tr>
+    </table>
   </script>
 </head>
 <body>
   <header>
-    <h1>LinkUp.com</h1>
     <div class="main-nav">
       <ul>
         <li><a href="#" class="icon-home" data-tab="home">Homepage</a></li>
@@ -34,45 +34,45 @@
       </ul>
       <div class="icon-menu"></div>
     </div>
-</header>
-<main>
-  <div class="tab-content" id="home">
-    <article>
-      <p>Meet up with potential business partners, employers or employees using a combination of linkedIn and Meet Up API's.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.<br>
+  </header>
 
-        How it works.<br>
-        1. Log in with LinkedIn<br>
-        2. Gets data with similar topic, location and populates upcoming meet ups
-        click to join a meet up.<br>
-        3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br><button id="loginbutton" style="display:block;" type="button" name="button">Login</button>
-      </p>
-    </article>
+  <main style="background-image: url('styles/imgs/linkedupbkgrd.jpg');">
+    <div class="tab-content" id="home">
+      <h1 style="text-align:center;">LinkUp.com</h1>
+      <article>
+        <p>Meet up with potential business partners, employers or employees using a combination of LinkedIn and Meet Up.com.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.<br>
 
-  </div>
-  <div class="tab-content" id="results">
-    <h3>Upcoming Meet Ups...</h3>
-    <div id="meetup-results">
+          How it works.<br>
+          1. Log in with LinkedIn<br>
+          2. Gets data with similar topic, location and populates upcoming meet ups
+          click to join a meet up.<br>
+          3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br><button id="loginbutton" style="display:block;" type="button" name="button">Login</button>
+        </p>
+      </article>
+
     </div>
-  </div>
-  <div class="tab-content" id="about" >
-    <ul>
-      <li class="about">Britney <img src="/styles/imgs/britney.jpeg" style="width:30%;height:30%;" alt="" /><br><p>Passionate tech student who loves coffee and candy<br>bvfdbvbfhdlvbfdb<p></li>
-        <li class="about">Trent <img src="/styles/imgs/trent.jpeg" style="width:30%;height:30%;" alt="" /><br>Passionate Gamer<br><p>Passionate Gamer<br>bvfdbvbfhdlvbfdb<p></li>
-          <li class="about">Jeremiah <img src="/styles/imgs/hawks.jpg" style="width:30%;height:30%; "alt="" /><br>Unborn<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+    <div class="tab-content" id="results">
+      <h3>Upcoming Meet Ups...</h3>
+      <div id="meetup-results">
+      </div>
+    </div>
+    <div class="tab-content" id="about">
+      <!-- =================== ABOUT US PAGE  ==================== -->
+      <ul>
+        <li class="about"><img src="styles/imgs/britney.jpeg" style="width:25%;height:25%;" alt="" /><p> Tian was born and raised in Tulsa, Oklahoma where she lived for 17. Upon moving to Stillwater, Ok she attented Oklahoma State University where she obtained a Bachelors degree in University Studies and Health Education and Promotion. Traveling the world she landed in Seattle, Washington where she lives now, fulfilling her dream of helping others find their passion, pursuing their dreams and reaching goals. As a motivational speaker Tian wants to spread Thunder knowledge in a Supersonic land.<p></li>
+        <li class="about"><img src="styles/imgs/trent.jpeg" style="width:25%;height:25%;" alt="" /> <p>Born and raised in Seattle, Washington, Trent always had a special gift to code faster than any human being alive. He loves hats and aspires to develop video games so that ever child in the world will be so consumed by gaming, that they forget how to live a normal life. </p></li>
+        <li class="about"><img src="styles/imgs/hawks.jpg" style="width:25%;height:25%; "alt="" /><p>A native of Atlanta, Georgia, Jeremiah Walters has always been passionate about sports, technology and web development. After thinking long and hard about these two main key components of his desire he decided to move his family to Seattle, Washington to create a better opportunity. Jeremiah aspires to build own his own business of free-lance web developers who have the same passion as he did.<p></li>
           </ul>
         </div>
-
-  </main>
+      </main>
       <footer style="border-color: white;">
         301n5 Final Project 2016
       </footer>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/vendor/scripts/handlebars.js"></script>
     <script src="/vendor/scripts/marked.js"></script>
     <script src="scripts/results.js" charset="utf-8"></script>
     <script src="scripts/app.js" charset="utf-8"></script>
     <script src="scripts/homeView.js"></script>
-
   </body>
   </html>

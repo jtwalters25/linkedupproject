@@ -65,10 +65,15 @@
   .main-nav ul li {
     display: inline;
     border-bottom: none;
+    color: blue;
+  }
+
+  .main-nav ul li a {
+    color: white;
   }
 
   .main-nav ul li:hover a {
-    color: maroon;
+    color: ;
   }
 
 }
