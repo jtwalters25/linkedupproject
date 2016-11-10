@@ -39,7 +39,7 @@
       if (data[i]&&data[i].time){
         data[i].time = new Date(data[i].time).toString();
         $('#meetup-results').append(template(data[i]));
-      }  
+      }
     }
     $('.tab-content').hide();
     $('#results').show();
