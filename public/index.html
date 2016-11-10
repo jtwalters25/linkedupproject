@@ -9,72 +9,81 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Righteous" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <script type="text/javascript" src="//platform.linkedin.com/in.js">
-    api_key:78jbwdgk7fup6m
-    authorize:true
-    onLoad: linkedUp.initialize
+  api_key:78jbwdgk7fup6m
+  authorize:true
+  onLoad: linkedUp.initialize
   </script>
   <script id="results-template" type="text/x-handlebars-template">
-    <li>
-      <a href="{{link}}" target="_blank"><h3>{{name}}</h3></a>
-      <p>Members: {{members}}</p>
-      <p>Last Updated: {{updated}}</p>
-    </li>
+
+    <ul style="background-color: black; opacity: 0.9; border:2px; border-color: red;">
+      <li>
+        <a href="{{event_url}}" target="_blank"><h3>{{name}}</h3></a>
+      </li>
+      <li>
+        Location: {{venue.city}}, {{venue.address_1}}
+      </li>
+      <li>
+        Time: {{time}}
+      </li>
+      <li>
+        Number attending so far: {{yes_rsvp_count}}
+      </li><br>
+    </ul>
   </script>
 </head>
 <body>
   <header>
-    <div class="container"
-    <h1>LinkUp.com</h1>
-    <nav class="main-nav">
-      <div class="icon-menu"></div>
+    <div class="main-nav">
       <ul>
         <li><a href="#" class="icon-home" data-tab="home">Homepage</a></li>
         <li><a href="#" class="icon-link" data-tab="results">Results</a></li>
         <li><a href="#" class="icon-happy" data-tab="about">About Us</a></li>
       </ul>
-    </nav>
-  </header>
-</div>
-<main>
-  <div class="tab-content" id="home">
-    <article>
-      <p>Meet up with potential business partners, employers or employees using a combination of linkedIn and Meet Up API's.  Link up based on topic, location and dates.  Find people who share a passion with you and you never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.<br>
-
-        How it works.<br>
-        1. Log in with LinkedIn<br>
-        2. Gets data with similar topic, location and populates upcoming meet ups
-        click to join a meet up.<br>
-        3. Find Meet Ups that appeal to your industry or interest and get out there and meet people in your network face to face.</br>
-      </p>
-    </article>
-    <button id="loginbutton" style="display:block;" type="button" name="button">Login</button>
-  </div>
-  <div class="tab-content" id="results">
-    <h3>Upcoming Meet Ups...</h3>
-    <div id="meetup-results">
+      <div class="icon-menu"></div>
     </div>
-  </div>
-  <div class="tab-content" id="about" >
-    <ul>
-      <li class="about">Britney <img src="/styles/imgs/britney.jpeg" style="width:30%;height:30%;" alt="" /><br><p>Passionate tech student who loves coffee and candy<br>bvfdbvbfhdlvbfdb<p></li>
-        <li class="about">Trent <img src="/styles/imgs/trent.jpeg" style="width:30%;height:30%;" alt="" /><br>Passionate Gamer<br><p>Passionate Gamer<br>bvfdbvbfhdlvbfdb<p></li>
-          <li class="about">Jeremiah <img src="/styles/imgs/hawks.jpg" style="width:30%;height:30%; "alt="" /><br>Unborn<br><p>hfgbifdlvhfiudlvfuidlsvfb<br>bvfdbvbfhdlvbfdb<p></li>
+  </header>
+
+  <main style="background-image: url('styles/imgs/linkedupbkgrd.jpg'); background-size:cover;">
+    <div class="tab-content" id="home">
+        <article>
+      <ul><h1 style="text-align:center;">Link-Up</h1>
+          <li class="showquestion" style="font-size: 150%; text-shadow: 5px 5px black;">WHAT IS IT?<br><div class="showanswer">This app helps you find meet-ups using data collected from your linkedIn profile when you log in.</div></li>
+          <li class="showquestion" style="font-size: 150%; text-shadow: 5px 5px black;">HOW DOES IT WORK?<br><div class="showanswer">Using a mash up of API's we are able to connect you to Meet-Ups using the data collected from your LinkedIn profile including you industry and location.</div></li>
+          <li class="showquestion" style="font-size: 150%; text-shadow: 5px 5px black;">WHY DO I NEED IT?<br><div class="showanswer">Online presence is never enough.  You never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.</div></li>
+          <li class="showquestion" style="font-size: 150%; text-shadow: 5px 5px black;">WHO WILL I LINK UP WITH ?<br><div class="showanswer"> Meet up with potential business partners, employers or employees using a combination of LinkedIn and Meet Up.com.</div></li>
+          <li class="showquestion" style="font-size: 150%; text-shadow: 5px 5px black;">WHERE DO WE LINK?<br><div class="showanswer">Link Up at locations within your zip code that are listed by most recently posted.</div> </li>
+        </ul>
+          <button id="loginbutton" style="display:block; float:center;" type="button" name="button">Login</button>
+
+        </p>
+      </article>
+
+    </div>
+    <div class="tab-content" id="results">
+      <table id="meetup-results">
+        <h1 style="text-align:center;">Upcoming Meet Ups...</h1>
+
+      </table>
+    </div>
+    <div class="tab-content" id="about">
+      <!-- =================== ABOUT US PAGE  ==================== -->
+      <ul>
+        <li class="about"><img src="styles/imgs/britney.jpeg" style="width:25%;height:25%;" alt="" /><h2>Britney Knowles</h2><p> Tian was born and raised in Tulsa, Oklahoma where she lived for 17 years. Upon moving to Stillwater, Ok she attented Oklahoma State University where she obtained a Bachelors degree in University Studies and Health Education and Promotion. Traveling the world she landed in Seattle, Washington where she lives now, fulfilling her dream of helping others find their passion, pursuing their dreams and reaching goals. As a motivational speaker Tian wants to spread Thunder knowledge in a Supersonic land.<p></li>
+          <li class="about"><img src="styles/imgs/trent.jpeg" style="width:25%;height:25%;" alt=""/> <h2>Trent Kress</h2><p>Born and raised in Seattle, Washington, Trent always had a special gift to code faster than any human being alive. He loves hats and aspires to develop video games so that ever child in the world will be so consumed by gaming, that they forget how to live a normal life. </p></li>
+          <li class="about"><img src="styles/imgs/hawks.jpg" style="width:25%;height:25%; border: 2px; border-color:white; "alt=""/><h2>Jeremiah Walters</h2><p>A native of Atlanta, Georgia, Jeremiah Walters has always been passionate about sports, technology and web development. After thinking long and hard about these two main key components of his desire he decided to move his family to Seattle, Washington to create a better opportunity. Jeremiah aspires to build own his own business of free-lance web developers who have the same passion as he did.<p></li>
           </ul>
         </div>
-
-  </main>
+      </main>
       <footer style="border-color: white;">
         301n5 Final Project 2016
       </footer>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="/vendor/scripts/handlebars.js"></script>
-    <script src="/vendor/scripts/marked.js"></script>
-    <script src="scripts/results.js" charset="utf-8"></script>
-    <script src="scripts/app.js" charset="utf-8"></script>
-    <script src="scripts/homeView.js"></script>
-
-  </body>
-  </html>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="/vendor/scripts/handlebars.js"></script>
+      <script src="/vendor/scripts/marked.js"></script>
+      <script src="scripts/app.js" charset="utf-8"></script>
+      <script src="scripts/homeView.js"></script>
+    </body>
+    </html>
