@@ -39,9 +39,9 @@ p {
 }
 
 h1 {
-  font-family: 'Covered By Your Grace', 'Righteous';
+  font-family: 'Monoton','Covered By Your Grace', 'Righteous';
     font-size: 400%; color: black;
-    text-shadow: 2px 2px blue;
+    text-shadow: 0.5px 1.5px blue;
     width: auto;
 }
 
