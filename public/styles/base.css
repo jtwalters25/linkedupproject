@@ -2,7 +2,6 @@ body{
   display: block;
   margin: 8px;
   background-color:black;
-
   font-size: 150%; color: white;
   font-family: 'Righteous', sans-serif;
   width: 100%;
@@ -74,7 +73,6 @@ h1 {
     list-style: none;
     text-align: center;
     background-color: transparent;
-
   }
 
   p {
@@ -91,9 +89,9 @@ h1 {
   .showquestion:hover .showanswer {
   display : block;
   }
-  .showhim:hover .ok{
-  display : none;
-  }
+
+
+
   #loginbutton{
     display:inline-flex;
     margin-left: 45%;
