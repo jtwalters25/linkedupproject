@@ -8,6 +8,10 @@ body{
   border: 1px solid gray;
   }
 
+.main-nav ul li a {
+  font-family: 'Righteous';
+}
+
 div.container{
   height: auto;
   width: auto;
@@ -16,8 +20,9 @@ div.container{
 }
 
 header, footer {
+
     padding-top: 2px;
-    color: black;
+    color: white;
     background-color: rgba(42, 43, 44, 1);
     text-align: center;
     font-size: 100%;
@@ -39,10 +44,16 @@ p {
 }
 
 h1 {
-  font-family: 'Covered By Your Grace', 'Righteous';
+  font-family: 'Monoton','Covered By Your Grace', 'Righteous';
     font-size: 400%; color: black;
-    text-shadow: 2px 2px blue;
+    text-shadow: 0.5px 1.5px blue;
     width: auto;
+}
+
+h4 {
+   font-size: 170%;
+   text-align: center;
+   text-shadow: 5px 5px black;"
 }
 
   .main-nav ul li a, .tab-content, {
@@ -54,8 +65,14 @@ h1 {
   #results, #meetup-results {
     width: 100%;
     height: 75%;
+  }
+
+  .meetupname{
+    font-size: 150%; color: yellow ;
+    text-shadow: 1px 1px blue;
 
   }
+
   article {
     border-left: 1px solid gray;
     padding: 1em;
@@ -83,10 +100,11 @@ h1 {
     margin:auto; padding: auto;
   }
 
-  .showanswer{
+  .showhover{
   display: none;
+
   }
-  .showquestion:hover .showanswer {
+  .showalways:hover .showhover {
   display : block;
   }
 
