@@ -1,7 +1,7 @@
 (function(module) {
 
   let linkedUp = { };
-
+// linkedUp module
   let template = Handlebars.compile($('#results-template').text());
 
   function handleLoginButton() {
@@ -11,26 +11,25 @@
       logout();
     }
   }
-
+// login button
   function getZipCode(callback) {
-    //$.getJSON('/ip/', function(ipData) {
     $.getJSON('http://freegeoip.net/json/', function(zipData) {
       callback(zipData.zip_code);
     });
-    //});
   }
-
+// uses users ip address to geolocate to render local data.  If running off vpn or something it would give vpn location
   function authorizeUser() {
     IN.User.authorize(function() {
       searchAndRenderMeetups(switchToResultsTab);
     });
   }
-
+  
   function searchAndRenderMeetups(callback) {
     IN.API.Profile('me').fields('id,firstName,lastName,industry').result(function(profile) {
       let search = profile.values[0].industry.replace(' ', ',');
       getZipCode(function(zip) {
         console.log('Retrieving results for ' + search + ' near ' + zip);
+        $('#username').text(profile.values[0].firstName + ' ' + profile.values[0].lastName);
         $.getJSON('meetup/2/open_events?text=' + search + '&time=2d,2w&zip=' + zip + '&status=upcoming', function(data) {
           renderResults(data.results);
           refreshButtonText();
