@@ -20,6 +20,23 @@
     });
   };
 
+  homeView.initQuestions = function() {
+    $('.questions ul > li').hide();
+    $('.questions').show();
+  };
+    $('.questions').on('click', 'ul', function(e) {
+      var target = $(this);
+      e.preventDefault();
+      $('.questions ul > li').each(function() {
+        if ($(this).is(':visible') && $(this).parent().text() != target.text()) {
+          $(this).toggle(200);
+        }
+      });
+      target.find('li').toggle(300);
+    });
+
+
+  homeView.initQuestions();
   homeView.toggleNavDisplay();
   homeView.showingTabs();
 
