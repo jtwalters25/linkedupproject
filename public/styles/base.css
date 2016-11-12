@@ -23,7 +23,7 @@ header, footer {
 
     padding-top: 2px;
     color: white;
-    background-color: rgba(42, 43, 44, 1);
+    background-color: black;
     text-align: center;
     font-size: 100%;
   }
@@ -47,6 +47,7 @@ h1 {
   font-family: 'Monoton','Covered By Your Grace', 'Righteous';
     font-size: 400%; color: black;
     text-shadow: 0.5px 1.5px blue;
+    text-align: center;
     width: auto;
 }
 
@@ -74,7 +75,6 @@ h4 {
   }
 
   article {
-    border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
   }
@@ -108,7 +108,7 @@ h4 {
   }
   .showalways:hover .showhover {
   display : block;
-  
+
   }
 
 
@@ -116,7 +116,7 @@ h4 {
   #loginbutton{
     display:inline-flex;
     margin-left: 45%;
-    height: 100px;
+    height: 60px;
     width: 200px;
     background-color: black;
     font-size: 200%; color: white;
