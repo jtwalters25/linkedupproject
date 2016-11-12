@@ -1,7 +1,7 @@
 (function(module) {
 
   let linkedUp = { };
-// linkedUp module
+  // linkedUp module
   let template = Handlebars.compile($('#results-template').text());
 
   function handleLoginButton() {
@@ -11,19 +11,19 @@
       logout();
     }
   }
-// login button
+  // login button
   function getZipCode(callback) {
     $.getJSON('http://freegeoip.net/json/', function(zipData) {
       callback(zipData.zip_code);
     });
   }
-// uses users ip address to geolocate to render local data.  If running off vpn or something it would give vpn location
+  // uses users ip address to geolocate to render local data.  If running off vpn or something it would give vpn location
   function authorizeUser() {
     IN.User.authorize(function() {
       searchAndRenderMeetups(switchToResultsTab);
     });
   }
-  
+
   function searchAndRenderMeetups(callback) {
     IN.API.Profile('me').fields('id,firstName,lastName,industry').result(function(profile) {
       let search = profile.values[0].industry.replace(' ', ',');
@@ -34,7 +34,7 @@
           renderResults(data.results);
           refreshButtonText();
           if (callback)
-            callback();
+          callback();
         });
       });
     });
