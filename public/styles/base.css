@@ -88,6 +88,8 @@ h4 {
 
   ul li{
     list-style: none;
+    width: auto;
+    margin: auto;
     text-align: center;
     background-color: transparent;
   }
@@ -106,6 +108,7 @@ h4 {
   }
   .showalways:hover .showhover {
   display : block;
+  
   }
 
 
