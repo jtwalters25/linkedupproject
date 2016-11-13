@@ -2,12 +2,11 @@ const requestProxy = require('express-request-proxy');
 const express = require('express');
 const port = process.env.PORT || 3000;
 const app = express();
-const config = require('./config');
 
 app.get('/meetup/*', requestProxy({
   url: 'https://api.meetup.com/*',
   query: {
-    key: config.MEETUP_KEY
+    key: process.env.MEETUP_KEY
   }
 }));
 
