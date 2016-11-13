@@ -13,7 +13,7 @@
   }
   // login button
   function getZipCode(callback) {
-    $.getJSON('http://freegeoip.net/json/', function(zipData) {
+    $.getJSON('https://freegeoip.net/json/', function(zipData) {
       callback(zipData.zip_code);
     });
   }
