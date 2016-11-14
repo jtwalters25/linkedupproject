@@ -1,0 +1,123 @@
+body{
+  display: block;
+  margin: 8px;
+  background-color:black;
+  font-size: 150%; color: white;
+  font-family: 'Righteous', sans-serif;
+  width: 100%;
+  border: 1px solid gray;
+  }
+
+.main-nav ul li a {
+  font-family: 'Righteous';
+}
+
+div.container{
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: inherit;
+}
+
+header, footer {
+
+    padding-top: 2px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 100%;
+  }
+
+table{
+  background-color: black;
+}
+
+p {
+  font-family: 'Righteous';
+  font-size: 35px;
+}
+
+.about, p {
+  font-size: 29px;
+  float: right;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Monoton','Covered By Your Grace', 'Righteous';
+    font-size: 400%; color: black;
+    text-shadow: 0.5px 1.5px blue;
+    text-align: center;
+    width: auto;
+}
+
+h4 {
+   font-size: 170%;
+   text-align: center;
+   text-shadow: 5px 5px black;"
+}
+
+  .main-nav ul li a, .tab-content, {
+    font-size: 1em; color: gold;
+    text-align: center;
+    display: inline-block;
+    font-family: serif;
+}
+  #results, #meetup-results {
+    width: 100%;
+    height: 75%;
+  }
+
+  .meetupname{
+    font-size: 150%; color: yellow ;
+    text-shadow: 1px 1px blue;
+
+  }
+
+  article {
+    padding: 1em;
+    overflow: hidden;
+  }
+
+  h2, h3 {
+    font-family: 'Righteous';
+    text-decoration: underline;
+    text-shadow: 2px white ;
+  }
+
+
+  ul li{
+    list-style: none;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  p {
+    /*text-align: left;*/
+    font-weight: normal; color: white;
+    font-family: ;
+    font-size: 105%;
+    margin:auto; padding: auto;
+  }
+
+  .showhover{
+  display: none;
+
+  }
+  .showalways:hover .showhover {
+  display : block;
+
+  }
+
+
+
+  #loginbutton{
+    display:inline-flex;
+    margin-left: 45%;
+    height: 60px;
+    width: 200px;
+    background-color: black;
+    font-size: 200%; color: white;
+  }

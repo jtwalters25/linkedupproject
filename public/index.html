@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LinkUp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Righteous" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <script type="text/javascript" src="//platform.linkedin.com/in.js">
+  api_key:78jbwdgk7fup6m
+  authorize:true
+  onLoad: linkedUp.initialize
+  </script>
+  <script id="results-template" type="text/x-handlebars-template">
+
+    <ul style="background-color: black; opacity: 0.9; border:2px; border-color: red;">
+      <li>
+        <a href="{{event_url}}" class="meetupname" target="_blank"><h3>{{name}}</h3></a>
+      </li>
+      <li>
+        Location: {{venue.city}}, {{venue.address_1}}
+      </li>
+      <li>
+        Time: {{time}}
+      </li>
+      <li>
+        Number attending so far: {{yes_rsvp_count}}
+      </li><br>
+    </ul>
+  </script>
+</head>
+<body>
+  <header>
+    <div class="main-nav">
+      <ul>
+        <li><a href="#" data-tab="home">Homepage</a></li>
+        <li><a href="#" data-tab="results">Results</a></li>
+        <li><a href="#" data-tab="about">About Us</a></li>
+      </ul>
+      <div class="icon-menu"></div>
+    </div>
+  </header>
+  <main style="background-image: url('styles/imgs/linkedupbkgrd1.jpg');">
+    <div class="tab-content" id="home">
+      <article>
+        <h1 style="text-align:center;">LinkedUp</h1>
+        <section class="questions">
+          <ul style="text-align:center;"><a href="#" style="width: 1000px; font-size: 150%; color: white; text-shadow: 5px 5px black;">WHAT IS IT?</a>
+            <li style="font-size: 160%; text-shadow: 5px 5px navy; width: 1000px;">This app helps you find meet-ups using data collected from your linkedIn profile when you log in</li>
+          </ul>
+        </section>
+        <section class="questions">
+          <ul style="text-align:center;"><a href="#" style="width: 1000px; font-size: 150%; color: white; text-shadow: 5px 5px black;">HOW DOES IT WORK?</a>
+            <li style="font-size: 160%; text-shadow: 5px 5px navy; width: 1000px;">Using a mash up of API's we are able to connect you to Meet-Ups using the data collected from your LinkedIn profile including your industry and location.</li>
+          </ul>
+        </section>
+        <section class="questions">
+          <ul style="text-align:center;"><a href="#" style="width: 1000px; font-size: 150%; color: white; text-shadow: 5px 5px black;">WHO WILL I LINK UP WITH?</a>
+            <li style="font-size: 160%; text-shadow: 5px 5px navy; width: 1000px;"> Link up with potential business partners, employers or employees who share your interest, drive and passion for your field of work.</li>
+          </ul>
+        </section>
+        <section class="questions">
+          <ul style="text-align:center;"><a href="#" style="width: 1000px; font-size: 150%; color: white; text-shadow: 5px 5px black;">WHERE DO WE LINK?</a>
+            <li style="font-size: 160%; text-shadow: 5px 5px navy; width: 1000px;">Link Up at locations within your zip code that are listed by most recently posted.</li>
+          </ul>
+        </section>
+        <section class="questions">
+          <ul style="text-align:center;"><a href="#" style="width: 1000px; font-size: 150%; color: white; text-shadow: 5px 5px black;">WHY DO I NEED IT?</a>
+            <li style="font-size: 160%; text-shadow: 5px 5px navy; width: 1000px;">Online presence is never enough.  You never know you could end up growing your network or landing a great job or business partner from face to face professional interactions.</li>
+          </ul>
+        </section>
+        <button id="loginbutton" style="display:block; overflow: scroll; float:center;" type="button" name="button">Login</button>
+        <br>
+    </article>
+
+  </div>
+  <div class="tab-content" id="results">
+    <table id="meetup-results">
+      <h1 style="text-align:center;">Linked Up</h1>
+      <h4>Hello <span id="username"></span>,<br> listed below are your upcoming meet up options</h4>
+    </table>
+  </div>
+  <div class="tab-content" id="about" style="background-color:black; opacity: 0.9; background-size:cover; overflow: scroll; width: 75%; margin-left: 10%;">
+    <!-- =================== ABOUT US PAGE  ==================== -->
+    <ul>
+      <li class="showalways"><img src="styles/imgs/britney.jpeg" style="width:25%;height:15%;" alt="" /><h2>Britney Presley</h2><p class="showhover"> Britney was born and raised in Tulsa, Oklahoma where she lived for 17 years. Upon moving to Stillwater, Ok she attented Oklahoma State University where she obtained a Bachelors degree in University Studies and Health Education and Promotion. Traveling the world she landed in Seattle, Washington where she lives now, fulfilling her dream of helping others find their passion, pursuing their dreams and reaching goals. As a motivational speaker Tian wants to spread Thunder knowledge in a Supersonic land.<p></li><br>
+        <li class="showalways"><img src="styles/imgs/trentpic.png" style="width:25%;height:15%;" alt=""/> <h2>Trent Kress</h2><p class="showhover">Born and raised in Seattle, Washington, Trent always had a special gift to code faster than any human being alive. He loves hats and aspires to develop video games so that ever child in the world will be so consumed by gaming, that they forget how to live a normal life. </p></li><br>
+        <li class="showalways"><img src="styles/imgs/hawks.jpg" style="width:25%;height:15%;  "alt=""/><h2>Jeremiah Walters</h2><p class="showhover">A native of Atlanta, Georgia, Jeremiah Walters has always been passionate about sports, technology and web development. <p></li><br></br>
+        </ul>
+      </div>
+    </main>
+    <footer style="border-color: white;">
+      LinkedUp 2016| By Brit Trent & Jeremiah
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/vendor/scripts/handlebars.js"></script>
+    <script src="/vendor/scripts/marked.js"></script>
+    <script src="scripts/app.js" charset="utf-8"></script>
+    <script src="scripts/homeView.js"></script>
+  </body>
+  </html>
